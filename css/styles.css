@@ -1,9 +1,16 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
 /* Colour Palette */
 
 :root{
     --color-primary:#2584ff;
+        --color-hover-primary:#4797ff;
     --color-secondary:#00d9ff;
+        --color-hover-secondary:#85edff;
     --color-accent:#ff3400;
+        --color-hover-accent:#ff5f37;
     --color-headings:#1b0760;
     --color-body:#918ca4;
 }
@@ -172,4 +179,71 @@ a {
     height: 6.4rem;
     justify-content: center;
     width: 6.4rem;
+}
+
+/* Buttons */
+
+.btn {
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0; 
+    outline: 0;
+    padding: 2rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color:var(--color-primary);
+    
+}
+
+.btn-primary:hover {
+    background-color:var(--color-hover-primary);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color:var(--color-hover-secondary);
+}
+
+.btn-accent {
+    background-color: var(--color-accent);
+    color: #fff;
+}
+
+.btn-accent:hover {
+    background-color:var(--color-hover-accent);
+}
+
+.btn-outline {
+    border: 2px solid var(--color-primary);
+    background-color: rgba(0,0,0,0);
+    color:var(--color-primary);
+}
+
+.btn-outline:hover {
+    border: 2px solid #333;
+    background-color: rgba(0,0,0,0);
+    color: #333;
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.6rem;
+    }
 }
