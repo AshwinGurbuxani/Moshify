@@ -628,3 +628,60 @@ a {
 .block__header {
     text-align: center;
 }
+
+/* Navigation Bar */
+
+.nav {
+    background: #000;
+    /* TODO: Diff btween bg and bgcol */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+.nav__list {
+    width: 100%;
+    margin: 0;
+}
+
+.nav__item {
+    padding: 1.5rem 2rem;
+    border-bottom:1px solid #555;
+}
+
+.nav__item > a {
+    color: #d2d0db;
+}
+
+.nav__toggler {
+    opacity: 0.5;
+    transition: box-shadow 0.15s;
+    cursor: pointer;
+}
+
+.nav.collapsable--expanded .nav__toggler {
+    opacity: 1;
+    box-shadow: 0 0 0 3px #444;
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .nav__toggler {
+        display: none;
+    }
+
+    .nav__list {
+        width: auto;
+        display: flex;
+        font-size: 2rem;
+        max-height: 100%;
+        opacity: 1;
+    }
+    
+    .nav__item {
+        border: 0;
+    }
+}
