@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Deploy your website in less than 60 seconds">
+    <meta property="og:title" content="Moshify: an easy way to get online, fast">
+    <meta property="og:description" content="Deploy your website and delight your customers for only $9!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <title>Moshify - Get online for just $9</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
@@ -17,9 +23,9 @@
     <!-- Nav Bar -->
     <header>
         <nav class="nav collapsable">
-            <img href="/" src="/icons/logo.svg" alt="">
+            <img src="/icons/logo.svg" alt="">
             <svg class="icon icon--white nav__toggler">
-                <use xlink:href="icons/sprite.svg#menu"></use>
+                <use href="icons/sprite.svg#menu"></use>
             </svg>
             <ul class="list nav__list collapsable__content">
                 <li class="nav__item"><a href="#">Hosting</a></li>
@@ -27,7 +33,6 @@
                 <li class="nav__item"><a href="#">Domain</a></li>
                 <li class="nav__item"><a href="#">Pricing</a></li>
             </ul>
-            </span>
         </nav>
     </header>
     <!-- Hero Banner -->
@@ -55,7 +60,7 @@
             <input type="text" class="input" placeholder="Enter your domain name here..." />
             <button class="btn btn--accent">
                 <svg class="icon icon--white">
-                    <use xlink:href="icons/sprite.svg#search"></use>
+                    <use href="icons/sprite.svg#search"></use>
                 </svg>Search</button>
         </div>
         <ul class="list block-domain__prices">
@@ -144,12 +149,12 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, odit.</p>
     </header>
 
-    <section class="block container">
+    <div class="block container">
         <article class="grid grid--col2 feature">
             <div class="feature__content" data-aos="fade-right">
                 <span>
                     <svg class="icon icon--primary">
-                        <use xlink:href="icons/sprite.svg#easy"></use>
+                        <use href="icons/sprite.svg#easy"></use>
                     </svg>
                 </span>
                 <h3 class="feature__heading">Super easy to use</h3>
@@ -168,7 +173,7 @@
             <div class="feature__content" data-aos="fade-right">
                 <span>
                     <svg class="icon icon--primary">
-                        <use xlink:href="icons/sprite.svg#easy"></use>
+                        <use href="icons/sprite.svg#easy"></use>
                     </svg>
                 </span>
                 <h3 class="feature__heading">Super easy to use</h3>
@@ -187,7 +192,7 @@
             <div class="feature__content" data-aos="fade-right">
                 <span>
                     <svg class="icon icon--primary">
-                        <use xlink:href="icons/sprite.svg#easy"></use>
+                        <use href="icons/sprite.svg#easy"></use>
                     </svg>
                 </span>
                 <h3 class="feature__heading">Super easy to use</h3>
@@ -201,10 +206,9 @@
                 <img class="feature__image" src="/images/easy.png" alt="">
             </picture>
         </article>
-    </section>
+    </div>
     <!-- Showcase block -->
     <section class="block block--dark block--skewed-right block-showcase" data-aos="zoom-out-up">
-        </div>
         <header class="block__header">
             <h2 class="block__heading">User-friendly Control Panel</h2>
         </header>
@@ -219,7 +223,7 @@
                     <div class="media">
                         <div class="media__image">
                             <svg class="icon icon--primary">
-                                <use xlink:href="/icons/sprite.svg#snap"></use>
+                                <use href="/icons/sprite.svg#snap"></use>
                             </svg>
                         </div>
                         <div class="media__body">
@@ -234,7 +238,7 @@
                     <div class="media">
                         <div class="media__image">
                             <svg class="icon icon--primary">
-                                <use xlink:href="/icons/sprite.svg#snap"></use>
+                                <use href="/icons/sprite.svg#snap"></use>
                             </svg>
                         </div>
                         <div class="media__body">
@@ -249,7 +253,7 @@
                     <div class="media">
                         <div class="media__image">
                             <svg class="icon icon--primary">
-                                <use xlink:href="/icons/sprite.svg#snap"></use>
+                                <use href="/icons/sprite.svg#snap"></use>
                             </svg>
                         </div>
                         <div class="media__body">
@@ -261,6 +265,7 @@
                     </div>
                 </li>
             </ul>
+        </div>
     </section>
     <!-- Testimonials block -->
 
@@ -278,7 +283,7 @@
                         <img src="images/testimonial.jpg" alt="A happy, smiling customer" />
                         <span class="icon-container icon-container--accent">
                             <svg class="icon icon--white icon--small">
-                                <use xlink:href="/icons/sprite.svg#quotes"></use>
+                                <use href="/icons/sprite.svg#quotes"></use>
                             </svg>
                         </span>
                     </div>
@@ -292,7 +297,7 @@
                             <div class="media">
                                 <div class="media__image">
                                     <svg class="icon icon--primary quote__line">
-                                        <use xlink:href="icons/sprite.svg#line"></use>
+                                        <use href="icons/sprite.svg#line"></use>
                                     </svg>
                                 </div>
                                 <div class="media__body">
@@ -308,25 +313,24 @@
     </section>
     <!-- Callout -->
     <div class="callout callout--primary" data-aos="flip-up">
-        <grid class="grid grid--col2">
+        <div class="grid grid--col2">
             <div class="callout__content">
                 <h2 class="callout__heading">Ready to get started?</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eos non ad saepe ex autem aperiam,
                     corporis culpa? Dicta, qui.</p>
             </div>
             <a href="#" class="btn btn-secondary btn-stretched">Get Started</a>
-        </grid>
+        </div>
     </div>
     <!-- Footer -->
-    <footer class="block dark--block footer">
+    <div class="block dark--block footer">
         <div class="container grid footer__sections">
             <section class="collapsable collapsable--expanded footer__section">
                 <header class="collapsable__header">
                     <h2 class="collapsable__heading footer__heading">Products</h2>
                     <svg class="icon icon--white collapsable__chevron">
-                        <use xlink:href="icons/sprite.svg#chevron"></use>
+                        <use href="icons/sprite.svg#chevron"></use>
                     </svg>
-                    </span>
                 </header>
                 <div class="collapsable__content">
                     <ul>
@@ -341,9 +345,8 @@
                 <header class="collapsable__header">
                     <h2 class="collapsable__heading footer__heading">Item 2</h2>
                     <svg class="icon icon--white collapsable__chevron">
-                        <use xlink:href="icons/sprite.svg#chevron"></use>
+                        <use href="icons/sprite.svg#chevron"></use>
                     </svg>
-                    </span>
                 </header>
                 <div class="collapsable__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vel
                     saepe
@@ -353,9 +356,8 @@
                 <header class="collapsable__header">
                     <h2 class="collapsable__heading footer__heading">Item 3</h2>
                     <svg class="icon icon--white collapsable__chevron">
-                        <use xlink:href="icons/sprite.svg#chevron"></use>
+                        <use href="icons/sprite.svg#chevron"></use>
                     </svg>
-                    </span>
                 </header>
                 <div class="collapsable__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vel
                     saepe
@@ -365,20 +367,19 @@
                 <header class="collapsable__header">
                     <h2 class="collapsable__heading footer__heading">Item 4</h2>
                     <svg class="icon icon--white collapsable__chevron">
-                        <use xlink:href="icons/sprite.svg#chevron"></use>
+                        <use href="icons/sprite.svg#chevron"></use>
                     </svg>
-                    </span>
                 </header>
                 <div class="collapsable__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit vel
                     saepe
                     numquam sint quos nobis nihil unde obcaecati amet nostrum.</div>
             </section>
-            <section class="footer__brand">
+            <div class="footer__brand">
                 <img src="/images/logo.svg" alt="">
                 <p class="footer__copyright">Copyright 2021 Mosh Hamedani</p>
-            </section>
+            </div>
         </div>
-    </footer>
+    </div>
     <script src="/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
