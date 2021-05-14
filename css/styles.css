@@ -1,3 +1,5 @@
+@import './normalize.css';
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -254,7 +256,7 @@ a {
 
 .btn--accent {
     background-color: var(--color-accent);
-    color: #fff;
+    color: #1d1d1d;
 }
 
 .btn--accent:hover {
